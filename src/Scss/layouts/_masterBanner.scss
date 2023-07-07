@@ -1,0 +1,94 @@
+@import "../abstract/variables";
+.master__banner__wrapper {
+  // margin: 0px $xs-spacing;
+  overflow: hidden;
+  .master__banner__left__section {
+    margin-bottom: $lg-spacing;
+  }
+  .master__banner__right__section {
+    margin-bottom: $lg-spacing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .master__banner__img__wrapper {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .master__banner__btn {
+      position: absolute;
+        animation: iconAnimation 1s infinite;
+      top: 60%;
+      left: 16%;
+      border: $none;
+      background-color: $primary-color;
+      color: $white-color;
+      font-size:22px;
+      border-radius: 8px;
+      padding: 16px 64px;
+      font-weight: bold;
+            &:hover {
+        background-color: $dark-color;
+      }
+    }
+    // button {
+    //   position: absolute;
+    //   top: 60%;
+    //   left: 42%;
+    //   border: $none;
+    //   background-color: $primary-color;
+    //   color: $white-color;
+    //   font-size: $sm-font;
+    //   border-radius: $md-spacing;
+    //   padding: $sm-spacing $md-spacing;
+    //   border: 1px solid $white-color;
+    //   letter-spacing: 1px;
+    //   &:hover {
+    //     background-color: $black-color;
+    //   }
+    // }
+  }
+}
+
+// @keyframes iconAnimation {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(10px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+
+.content__description {
+  padding-top: $md-spacing;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $md-spacing;
+  .content__desc__img {
+    img {
+      border-radius:16px;
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+    }
+  }
+  p {
+    font-weight: bold;
+  }
+  .content__desc__btn {
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    border-radius: $sm-spacing ;
+    padding: 4px 12px;
+    &:hover{
+      background-color: $admin-color;
+    }
+  }
+}

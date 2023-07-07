@@ -1,0 +1,14 @@
+@import "../abstract/variables";
+.base__sample__input {
+  border: none;
+  padding: $s-spacing $md-spacing;
+  border: $none;
+  cursor: pointer;
+  background-color: $white-color;
+  border-radius: $s-spacing;
+  color: $black-color;
+  letter-spacing: 1px;
+  &:focus{
+    outline: none;
+  }
+}

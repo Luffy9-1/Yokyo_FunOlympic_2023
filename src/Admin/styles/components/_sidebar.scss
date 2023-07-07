@@ -1,0 +1,71 @@
+@import "../../../Scss/abstract/_abstracts";
+
+.sidebar__wrapper {
+  height: 100vh;
+  width: 250px;
+  .sidebar__content {
+    .sidebar__title {
+      text-align: center;
+      font-size: 22px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-bottom: 1px solid $tertiary-color;
+      padding: $md-spacing;
+      gap: 12px;
+      img {
+        height: 40px;
+        width: 40px;
+        object-fit: contain;
+        padding-top: 6px;
+      }
+      h3 {
+        font-size: $md-font;
+        font-weight: bold;
+      }
+    }
+    .sidebar__list {
+      .sidebar__list__content {
+        margin: $md-spacing $md-spacing;
+        display: FLEX;
+        .active {
+          color: $primary-color !important;
+          font-weight: bold;
+          span {
+            color: $primary-color;
+          }
+        }
+        p {
+          font-size: 20px;
+          a {
+            color: $black-color !important;
+            padding-top: 12px !important;
+          }
+
+          &:hover {
+            color: #1976d2;
+            font-weight: bold;
+          }
+          &:hover span {
+            color: #1976d2;
+          }
+        }
+        span {
+          color: $primary-color;
+          margin-right: $md-spacing;
+          margin-top:4px ;
+        }
+      }
+    }
+  }
+}
+.logout__btn{
+  text-align: center;
+  button{
+    border: none   !important;
+    margin-top: 280px;
+    padding:4px $md-spacing;
+    background-color: $dark-color;
+    color: $white-color;
+  }
+}
